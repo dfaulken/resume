@@ -18,6 +18,58 @@ body{
       h1{
         text-align: center;
       }
+
+      .main-section{
+        .unit{
+          display: flex;
+          justify-content: center;
+          padding-top: 3px;
+
+          .title, .info{
+            width: 30%;
+          }
+          .title{
+            font-weight: bold;
+            text-align: right;
+            margin-right: 1em;
+          }
+          .info{
+            margin-left: 1em;
+            text-align: left;
+          }
+        }
+
+        h2.title{
+          border-bottom: 2px solid lightgrey;
+          border-top: 2px solid lightgrey;
+          padding: 5px;
+        }
+
+        .job{
+          .location{
+            font-size: large;
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+
+          .description{
+            margin: 0 5%;
+          }
+        }
+      }
+
+      .meta{
+        display: flex;
+        justify-content: space-between;
+        .dates{
+          display: flex;
+          color: grey;
+
+          .range{
+            margin-left: 2em;
+          }
+        }
+      }
     }
   }
 }

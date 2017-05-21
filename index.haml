@@ -23,12 +23,18 @@
             .title A few talks I've given
             .info
               %a{href: 'https://slides.com/davidfaulkenberry'} slides.com/davidfaulkenberry
+          .unit
+            .title The source of this résumé
+            .info
+              %a{href: 'https://github.com/dfaulken/resume'} git@github.com:dfaulken/resume
         .main-section#experience
           %h2.title Experience
           .job
             .location Pioneer Valley Transit Authority, Springfield, MA
-            .title Software Developer (based out of UMass campus)
-            .dates 5 / 2017 &mdash; present
+            .meta
+              .title Software Developer (based out of UMass campus)
+              .dates
+                .range 5 / 2017 &mdash; present
             .description
               %p
                 Design, research and prototype various projects, including automated bus stop
@@ -37,8 +43,10 @@
               %p Continue Operations Staff duties at UMass Transit Services.
           .job
             .location UMass Transit Services, Amherst, MA
-            .title Lead Systems Engineer
-            .dates 3 / 2013 &mdash; 5 / 2017
+            .meta
+              .title Lead Systems Engineer
+              .dates
+                .range 3 / 2013 &mdash; 5 / 2017
             .description
               %ul
                 %li
@@ -96,10 +104,10 @@
         .main-section#education
           %h2.title Education
           .subsection
-            %h3.title University of Massachusetts, Amherst
-            .dates
-              .range 9 / 2011 &mdash; 5 / 2013
-              .range 7 / 2015 &mdash; 5 / 2017
+            .meta
+              %h3.title University of Massachusetts, Amherst
+              .dates
+                .range 9 / 2011 &mdash; 5 / 2013
+                .range 7 / 2015 &mdash; 5 / 2017
             Bachelor of Arts (B.A.), Computer Science.
             Concentration in Mathematics.
-

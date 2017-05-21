@@ -14,5 +14,36 @@ body {
       padding: 10px 5%; }
       body .container .main-content h1 {
         text-align: center; }
+      body .container .main-content .main-section .unit {
+        display: flex;
+        justify-content: center;
+        padding-top: 3px; }
+        body .container .main-content .main-section .unit .title, body .container .main-content .main-section .unit .info {
+          width: 30%; }
+        body .container .main-content .main-section .unit .title {
+          font-weight: bold;
+          text-align: right;
+          margin-right: 1em; }
+        body .container .main-content .main-section .unit .info {
+          margin-left: 1em;
+          text-align: left; }
+      body .container .main-content .main-section h2.title {
+        border-bottom: 2px solid lightgrey;
+        border-top: 2px solid lightgrey;
+        padding: 5px; }
+      body .container .main-content .main-section .job .location {
+        font-size: large;
+        font-weight: bold;
+        margin-bottom: 5px; }
+      body .container .main-content .main-section .job .description {
+        margin: 0 5%; }
+      body .container .main-content .meta {
+        display: flex;
+        justify-content: space-between; }
+        body .container .main-content .meta .dates {
+          display: flex;
+          color: grey; }
+          body .container .main-content .meta .dates .range {
+            margin-left: 2em; }
 
 /*# sourceMappingURL=main.css.map */
