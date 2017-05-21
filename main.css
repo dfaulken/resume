@@ -40,10 +40,15 @@ body {
       body .container .main-content .meta {
         display: flex;
         justify-content: space-between; }
-        body .container .main-content .meta .dates {
-          display: flex;
-          color: grey; }
-          body .container .main-content .meta .dates .range {
-            margin-left: 2em; }
+        body .container .main-content .meta h3 {
+          margin-bottom: 10px;
+          margin-top: 0; }
+        body .container .main-content .meta div {
+          align-self: center; }
+          body .container .main-content .meta div.dates {
+            display: flex;
+            color: grey; }
+            body .container .main-content .meta div.dates .range {
+              margin-left: 2em; }
 
 /*# sourceMappingURL=main.css.map */
