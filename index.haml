@@ -7,6 +7,9 @@
     .container
       .main-content
         %h1 David Faulkenberry
+        .links
+          - %w[experience skills education].each do |link|
+            %a{href: "##{link}"}= link.upcase
         .main-section#contact
           .unit
             .title Where I live

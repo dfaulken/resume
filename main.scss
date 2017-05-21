@@ -19,7 +19,24 @@ body{
         text-align: center;
       }
 
+      .links{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 0 20%;
+        a{
+          color: grey;
+          font-weight: bold;
+          letter-spacing: 2px;
+          text-decoration: none;
+        }
+      }
+
       .main-section{
+        &:last-child{
+          margin-bottom: 10px;
+        }
+        
         .unit{
           display: flex;
           justify-content: center;
