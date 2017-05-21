@@ -1,0 +1,18 @@
+body {
+  background: powderblue;
+  font-family: 'Avenir', sans-serif; }
+  body .container {
+    background: cornsilk;
+    border-radius: 12px;
+    margin: 10px 7%;
+    padding: 15px;
+    width: 85%; }
+    body .container .main-content {
+      background: azure;
+      border: 2px solid burlywood;
+      border-radius: 12px;
+      padding: 10px 5%; }
+      body .container .main-content h1 {
+        text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
