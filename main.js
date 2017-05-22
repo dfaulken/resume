@@ -1,3 +1,7 @@
+// Welcome! jQuery, animate.css, and JS intervals are three things I have
+// a good amount of experience with, so feel free to peruse this source code.
+// For more examples of Javascript I've worked on, check out my GitHub profile.
+
 $(document).ready(function(){
   $('.main-content').on('click', '.comment-link', toggleCommentBox)
   $('body').on('click', '.container', hideCommentBox);
