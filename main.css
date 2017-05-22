@@ -87,6 +87,10 @@ body {
         margin-bottom: 5px; }
       body .container .main-content .main-section .job .description {
         margin: 0 5%; }
+        body .container .main-content .main-section .job .description ul li {
+          margin-top: 10px; }
+          body .container .main-content .main-section .job .description ul li ul li {
+            margin-top: 0; }
       body .container .main-content .meta {
         display: flex;
         justify-content: space-between; }
