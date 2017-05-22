@@ -7,223 +7,224 @@
     %script{src: 'jquery-3.2.1.min.js', type: 'text/javascript'}
     %script{src: 'main.js', type: 'text/javascript'}
   %body
-    .comment-text{ data: { id: 0 } }
-      The Internet generally being a less formal setting than a PDF document
-      (and certainly more flexible when it comes to presentation of content),
-      I thought it might be nice to share some brief context about various items
-      I mention here.
-      %br
-      %br
-      Please feel free to click around and read them!
-      %br
-      %br
-      (Click the comment link, or anywhere outside of this box, to exit the comment.)
-    .comment-text{ data: { id: 1 } }
-      While the focus of my position is on PVTA projects largely unrelated
-      to UMass Transit, we feel at Transit that it's important for staff throughout
-      the organization to maintain a meaningful connection to everyday operations.
-      %br
-      %br
-      As a student, I committed to driving a regular fixed-route shift at least
-      once per week &mdash; and similarly, in this professional position, I still attend weekly
-      staff meetings and participate in an operations on-call rotation.
-    .comment-text{ data: { id: 2 } }
-      More details coming soon (once I get more into the swing of things).
-    .comment-text{ data: { id: 3 } }
-      This was actually the only project that I wasn't involved with while I was lead developer.
-      One of our brilliant student developers (and a fellow class of '17 graduate!),
-      = succeed ',' do
-        %a{ href: 'https://github.com/akaplo' }Aaron Kaplowitz
-      spearheaded the implementation of that app.
-      %br
-      %br
-      My role was largely to step back, allocate Ruby on Rails work to other team members,
-      and let the Angular / ionic / cordova team do their thing.
-    .comment-text{ data: { id: 4 } }
-      This is one of UMass Transit's few private respositories, for largely historical reasons.
-      %br
-      %br
-      Suffice it to say that it has 86 object models,
-      several controllers and models with over a thousand lines of code,
-      and has been contributed to by 23 developers since its inception in August 2011.
-      It has been live since May 10th, 2013.
-      %br
-      %br
-      As of May 2017, I am the primary contributor, with nearly 2,900 commits,
-      having added 91,000+ lines and deleted 66,000+ lines.
-    .comment-text{ data: { id: 5 } }
-      My role was usually the design, architecture, and Agile prototyping.
-      %br
-      %br
-      Once the apps were deployed to production, I would then delegate the remaining
-      non-blocking issues to senior and junior (training) developers.
-      %br
-      %br
-      During my two years as lead, there were between 9 and 12 such projects, depending on
-      whether you count projects which were developed, but never used meaningfully.
-    .comment-text{ data: { id: 6 } }
-      You can see the slides with 'subtitles'
-      = succeed '.' do
-        %a{ href: 'https://slides.com/davidfaulkenberry/rails-unit-tests' } here
-      %br
-      %br
-      I later
-      %a{href: 'https://slides.com/davidfaulkenberry/cs320-geek-talk'} repeated
-      this talk to a group of computer science undergraduates, while enrolled
-      in a graduate course in software engineering project management.
-    .comment-text{ data: { id: 7 } }
-      This ended up being an abortive project. We eventually decided to go in a different
-      direction after about a year of development, with counsel from a very experienced
-      Transit Services alumnus.
-      %br
-      %br
-      Nevertheless, it was an extremely valuable learning experience: both from a management perspective,
-      in terms of leading a large team through the green-field implementation of a relatively abstract, ephemeral idea;
-      as well as from a design perspective, in that a Ruby on Rails microservices system didn't really exist.
-      (As far as I'm aware, this is still true.)
     .comment-container.animated
       .comment
-    .container
-      .main-content
-        %h1 David Faulkenberry
-        .main-section#contact
-          .unit
-            .title Where I live
-            .info Amherst, MA
-          .unit
-            .title How to reach me
-            .info
-              %a{href: 'mailto:david.faulkenberry@gmail.com'} david.faulkenberry@gmail.com
-          .unit
-            .title The public code I've written
-            .info
-              %a{href: 'https://github.com/dfaulken'} github.com/dfaulken
-          .unit
-            .title A few talks I've given
-            .info
-              %a{href: 'https://slides.com/davidfaulkenberry'} slides.com/davidfaulkenberry
-          .unit
-            .title The source of this résumé
-            .info
-              %a{href: 'https://github.com/dfaulken/resume'} git@github.com:dfaulken/resume.git
-          .comment-explanation
-            This online version of my résumé features some bonus comments.
-            %br
-            To learn more about an item, click the icon &rarr;
-            %span.comment-link{ data: { id: 0 } } &rdquo;
-        .main-section#experience
-          %h2.title Experience
-          .job
-            .location Pioneer Valley Transit Authority, Springfield, MA
-            .meta
-              .title Software Developer (based out of UMass campus)
-              .dates
-                .range 5 / 2017 &mdash; present
-            .description
-              %p
-                Design, research and prototype various projects, including automated bus stop
-                departure displays &amp; announcements, operator incident report management,
-                and wireless download of in-vehicle video.
-                %span.comment-link{ data: { id: 2 } } &rdquo;
-              %p
-                Continue Operations Staff duties at UMass Transit Services.
-                %span.comment-link{ data: { id: 1 } } &rdquo;
-          .job
-            .location UMass Transit Services, Amherst, MA
-            .meta
-              .title Lead Systems Engineer
-              .dates
-                .range 3 / 2013 &mdash; 5 / 2017
-            .description
-              %p Systems Engineer starting 3 / 2013, Lead Systems Engineer starting 5 / 2015.
+    .flex-container
+      .content
+        .main-content
+          %h1 David Faulkenberry
+          .main-section#contact
+            .unit
+              .title Where I live
+              .info Amherst, MA
+            .unit
+              .title How to reach me
+              .info
+                %a{href: 'mailto:david.faulkenberry@gmail.com'} david.faulkenberry@gmail.com
+            .unit
+              .title The public code I've written
+              .info
+                %a{href: 'https://github.com/dfaulken'} github.com/dfaulken
+            .unit
+              .title A few talks I've given
+              .info
+                %a{href: 'https://slides.com/davidfaulkenberry'} slides.com/davidfaulkenberry
+            .unit
+              .title The source of this résumé
+              .info
+                %a{href: 'https://github.com/dfaulken/resume'} git@github.com:dfaulken/resume.git
+            .comment-explanation
+              This online version of my résumé features some bonus comments.
+              %br
+              To learn more about an item, click the icon &rarr;
+              %span.comment-link{ data: { id: 0 } } &rdquo;
+          .main-section#experience
+            %h2.title Experience
+            .job
+              .location Pioneer Valley Transit Authority, Springfield, MA
+              .meta
+                .title Software Developer (based out of UMass campus)
+                .dates
+                  .range 5 / 2017 &mdash; present
+              .description
+                %p
+                  Design, research and prototype various projects, including automated bus stop
+                  departure displays &amp; announcements, operator incident report management,
+                  and wireless download of in-vehicle video.
+                  %span.comment-link{ data: { id: 2 } } &rdquo;
+                %p
+                  Continue Operations Staff duties at UMass Transit Services.
+                  %span.comment-link{ data: { id: 1 } } &rdquo;
+            .job
+              .location UMass Transit Services, Amherst, MA
+              .meta
+                .title Lead Systems Engineer
+                .dates
+                  .range 3 / 2013 &mdash; 5 / 2017
+              .description
+                %p Systems Engineer starting 3 / 2013, Lead Systems Engineer starting 5 / 2015.
+                %ul
+                  %li
+                    As lead developer:
+                    %ul
+                      %li Interview, onboard, train, manage and mentor a revolving team of 5-8 student developers
+                      %li Lead weekly code reviews and conduct monthly developer satisfaction check-ins
+                      %li Participate in Transportation Services IT on-call rotation responding to downtime of web services
+                      %li
+                        Post fixed-route service detours to social media platforms:
+                        %ul
+                          %li
+                            %a{href: 'https://twitter.com/umasstransit'} Twitter
+                          %li
+                            %a{href: 'https://facebook.com/UMassTransit'} Facebook
+                          %li
+                            = succeed ', ' do
+                              %a{href: 'https://m.pvta.com'} PVTrAck
+                            our in-house developed cross-platform bus tracker
+                            %span.comment-link{ data: { id: 3 } } &rdquo;
+                      %li Research industry and open-source best practices of maintainable development
+                  %li
+                    Some accomplishments:
+                    %ul
+                      %li Redesigned job description and interview/training processes to appeal to more diverse applicants
+                      %li Instituted practice of monthly developer satisfaction check-ins
+                      %li
+                        Authored / published open-source Ruby gems extending two popular dev/test tools
+                        = precede '(' do
+                          %a{ href: 'https://github.com/umts/custom-cops' } RuboCop
+                        and
+                        = succeed ')' do
+                          %a{ href: 'https://github.com/umts/custom-matchers' } RSpec
+                      %li Researched and pioneered development shift towards lightweight service-based model in Rails 4 / 5
+                      %li Raised standards of development, including 100% test coverage, CI, and general office code style
+                      %li
+                        Presented to 20+ UMass IT managers about the benefits of test-driven development using Rails
+                        %span.comment-link{ data: { id: 6 } } &rdquo;
+                      %li
+                        Designed and oversaw initial implementation of a microservices framework in Ruby on Rails
+                        %span.comment-link{ data: { id: 7 } } &rdquo;
+                      %li Assisted Transit managers and planners with fine-tuning schedules and bus destination headsigns
+                      %li Collaborated with UMass Parking Services on interdependent JSON APIs
+                      %li Began training replacement Lead Systems Engineer in the particulars of the above duties
+                  %li
+                    General developer duties across the entire student team:
+                    %ul
+                      %li
+                        Maintain legacy employee-use Rails 3 monolith-style app
+                        %span.comment-link{ data: { id: 4 } } &rdquo;
+                      %li
+                        Develop new, mostly public-facing Rails 4 / 5 services
+                        %span.comment-link{ data: { id: 5 } } &rdquo;
+                      %li Interact closely with Transit operations staff members to ascertain their web service needs
+                  %li
+                    As member of Transit operations staff:
+                    %ul
+                      %li Participate in on-call rotation responding to accidents; covering driving and dispatching shifts
+          .main-section#skills
+            %h2.title Development Knowledge
+            .subsection
+              %h3 Languages (in order of confidence):
               %ul
-                %li
-                  As lead developer:
-                  %ul
-                    %li Interview, onboard, train, manage and mentor a revolving team of 5-8 student developers
-                    %li Lead weekly code reviews and conduct monthly developer satisfaction check-ins
-                    %li Participate in Transportation Services IT on-call rotation responding to downtime of web services
-                    %li
-                      Post fixed-route service detours to social media platforms:
-                      %ul
-                        %li
-                          %a{href: 'https://twitter.com/umasstransit'} Twitter
-                        %li
-                          %a{href: 'https://facebook.com/UMassTransit'} Facebook
-                        %li
-                          = succeed ', ' do
-                            %a{href: 'https://m.pvta.com'} PVTrAck
-                          our in-house developed cross-platform bus tracker
-                          %span.comment-link{ data: { id: 3 } } &rdquo;
-                    %li Research industry and open-source best practices of maintainable development
-                %li
-                  Some accomplishments:
-                  %ul
-                    %li Redesigned job description and interview/training processes to appeal to more diverse applicants
-                    %li Instituted practice of monthly developer satisfaction check-ins
-                    %li
-                      Authored / published open-source Ruby gems extending two popular dev/test tools
-                      = precede '(' do
-                        %a{ href: 'https://github.com/umts/custom-cops' } RuboCop
-                      and
-                      = succeed ')' do
-                        %a{ href: 'https://github.com/umts/custom-matchers' } RSpec
-                    %li Researched and pioneered development shift towards lightweight service-based model in Rails 4 / 5
-                    %li Raised standards of development, including 100% test coverage, CI, and general office code style
-                    %li
-                      Presented to 20+ UMass IT managers about the benefits of test-driven development using Rails
-                      %span.comment-link{ data: { id: 6 } } &rdquo;
-                    %li
-                      Designed and oversaw initial implementation of a microservices framework in Ruby on Rails
-                      %span.comment-link{ data: { id: 7 } } &rdquo;
-                    %li Assisted Transit managers and planners with fine-tuning schedules and bus destination headsigns
-                    %li Collaborated with UMass Parking Services on interdependent JSON APIs
-                    %li Began training replacement Lead Systems Engineer in the particulars of the above duties
-                %li
-                  General developer duties across the entire student team:
-                  %ul
-                    %li
-                      Maintain legacy employee-use Rails 3 monolith-style app
-                      %span.comment-link{ data: { id: 4 } } &rdquo;
-                    %li
-                      Develop new, mostly public-facing Rails 4 / 5 services
-                      %span.comment-link{ data: { id: 5 } } &rdquo;
-                    %li Interact closely with Transit operations staff members to ascertain their web service needs
-                %li
-                  As member of Transit operations staff:
-                  %ul
-                    %li Participate in on-call rotation responding to accidents; covering driving and dispatching shifts
-        .main-section#skills
-          %h2.title Development Knowledge
-          .subsection
-            %h3 Languages (in order of confidence):
-            %ul
-              %li Ruby
-              %li JavaScript / jQuery
-              %li Python
-              %li C
-              %li Scala
-              %li Java
-            %h3 Tools / frameworks:
-            %ul
-              %li RSpec
-              %li Capybara
-              %li FactoryGirl
-              %li Capistrano
-              %li Travis CI
-              %li CodeClimate
-              %li Git / GitHub
-              %li Bootstrap
-        .main-section#education
-          %h2.title Education
-          .subsection
-            .meta
-              %h3.title University of Massachusetts, Amherst
-              .dates
-                .range 9 / 2011 &mdash; 5 / 2013
-                .range 7 / 2015 &mdash; 5 / 2017
-            Bachelor of Arts (B.A.), Computer Science.
-            Concentration in Mathematics.
-        .copyright
-          .notice &copy; 2017 David Faulkenberry
-          %a{ href: 'https://github.com/dfaulken/resume/blob/master/LICENSE' } Site License
+                %li Ruby
+                %li JavaScript / jQuery
+                %li Python
+                %li C
+                %li Scala
+                %li Java
+              %h3 Tools / frameworks:
+              %ul
+                %li RSpec
+                %li Capybara
+                %li FactoryGirl
+                %li Capistrano
+                %li Travis CI
+                %li CodeClimate
+                %li Git / GitHub
+                %li Bootstrap
+          .main-section#education
+            %h2.title Education
+            .subsection
+              .meta
+                %h3.title University of Massachusetts, Amherst
+                .dates
+                  .range 9 / 2011 &mdash; 5 / 2013
+                  .range 7 / 2015 &mdash; 5 / 2017
+              Bachelor of Arts (B.A.), Computer Science.
+              Concentration in Mathematics.
+          .copyright
+            .notice &copy; 2017 David Faulkenberry
+            %a{ href: 'https://github.com/dfaulken/resume/blob/master/LICENSE' } Site License
+      .comment-text{ data: { id: 0 } }
+        The Internet generally being a less formal setting than a PDF document
+        (and certainly more flexible when it comes to presentation of content),
+        I thought it might be nice to share some brief context about various items
+        I mention here.
+        %br
+        %br
+        Please feel free to click around and read them!
+        %br
+        %br
+        (Click the comment link, or anywhere outside of this box, to exit the comment.)
+      .comment-text{ data: { id: 1 } }
+        While the focus of my position is on PVTA projects largely unrelated
+        to UMass Transit, we feel at Transit that it's important for staff throughout
+        the organization to maintain a meaningful connection to everyday operations.
+        %br
+        %br
+        As a student, I committed to driving a regular fixed-route shift at least
+        once per week &mdash; and similarly, in this professional position, I still attend weekly
+        staff meetings and participate in an operations on-call rotation.
+      .comment-text{ data: { id: 2 } }
+        More details coming soon (once I get more into the swing of things).
+      .comment-text{ data: { id: 3 } }
+        This was actually the only project that I wasn't involved with while I was lead developer.
+        One of our brilliant student developers (and a fellow class of '17 graduate!),
+        = succeed ',' do
+          %a{ href: 'https://github.com/akaplo' }Aaron Kaplowitz
+        spearheaded the implementation of that app.
+        %br
+        %br
+        My role was largely to step back, allocate Ruby on Rails work to other team members,
+        and let the Angular / ionic / cordova team do their thing.
+      .comment-text{ data: { id: 4 } }
+        This is one of UMass Transit's few private respositories, for largely historical reasons.
+        %br
+        %br
+        Suffice it to say that it has 86 object models,
+        several controllers and models with over a thousand lines of code,
+        and has been contributed to by 23 developers since its inception in August 2011.
+        It has been live since May 10th, 2013.
+        %br
+        %br
+        As of May 2017, I am the primary contributor, with nearly 2,900 commits,
+        having added 91,000+ lines and deleted 66,000+ lines.
+      .comment-text{ data: { id: 5 } }
+        My role was usually the design, architecture, and Agile prototyping.
+        %br
+        %br
+        Once the apps were deployed to production, I would then delegate the remaining
+        non-blocking issues to senior and junior (training) developers.
+        %br
+        %br
+        During my two years as lead, there were between 9 and 12 such projects, depending on
+        whether you count projects which were developed, but never used meaningfully.
+      .comment-text{ data: { id: 6 } }
+        You can see the slides with 'subtitles'
+        = succeed '.' do
+          %a{ href: 'https://slides.com/davidfaulkenberry/rails-unit-tests' } here
+        %br
+        %br
+        I later
+        %a{href: 'https://slides.com/davidfaulkenberry/cs320-geek-talk'} repeated
+        this talk to a group of computer science undergraduates, while enrolled
+        in a graduate course in software engineering project management.
+      .comment-text{ data: { id: 7 } }
+        This ended up being an abortive project. We eventually decided to go in a different
+        direction after about a year of development, with counsel from a very experienced
+        Transit Services alumnus.
+        %br
+        %br
+        Nevertheless, it was an extremely valuable learning experience: both from a management perspective,
+        in terms of leading a large team through the green-field implementation of a relatively abstract, ephemeral idea;
+        as well as from a design perspective, in that a Ruby on Rails microservices system didn't really exist.
+        (As far as I'm aware, this is still true.)
