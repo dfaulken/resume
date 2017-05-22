@@ -1,19 +1,17 @@
 $(document).ready(function(){
   $('.main-content').on('click', '.comment-link', toggleCommentBox)
+  $('body').on('click', '.container', hideCommentBox);
 });
 
 function toggleCommentBox(){
   fillComment($(this).data('id'));
-  var isCurrentlyAnimating = $('.comment-container').hasClass('slideInLeft') ||
-    $('.comment-container').hasClass('slideOutLeft');
-  if(!isCurrentlyAnimating){
-    if($('.comment-container').is(':visible'))
-      hideCommentBox();
-    else showCommentBox();
-  }
+  if($('.comment-container').is(':visible'))
+    hideCommentBox();
+  else showCommentBox();
 }
 
 function showCommentBox(){
+  if(commentBoxIsAnimating()){ return; }
   $('.comment-container').show().addClass('slideInLeft');
   setTimeout(function(){
     $('.comment-container').removeClass('slideInLeft');
@@ -21,6 +19,7 @@ function showCommentBox(){
 }
 
 function hideCommentBox(){
+  if(commentBoxIsAnimating()){ return; }
   $('.comment-container').addClass('slideOutLeft');
   // Just in case browser doesn't support CSS animations
   setTimeout(function(){
@@ -33,4 +32,9 @@ function fillComment(commentID){
     return $(this).data('id')
   }).eq(0).html();
   $('.comment').html(commentText);
+}
+
+function commentBoxIsAnimating(){
+  return $('.comment-container').hasClass('slideInLeft') ||
+         $('.comment-container').hasClass('slideOutLeft');
 }
