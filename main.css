@@ -33,6 +33,9 @@ body {
     font-family: 'Times', serif;
     font-size: large;
     font-weight: bold; }
+    body span.comment-link.selected {
+      color: grey;
+      background: white; }
   body .container {
     background: cornsilk;
     border-radius: 12px;

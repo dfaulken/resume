@@ -38,6 +38,11 @@ body{
     font-family: 'Times', serif;
     font-size: large;
     font-weight: bold;
+
+    &.selected{
+      color: grey;
+      background: white;
+    }
   }
 
   .container{

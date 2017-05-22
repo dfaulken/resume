@@ -4,10 +4,13 @@ $(document).ready(function(){
 });
 
 function toggleCommentBox(){
-  fillComment($(this).data('id'));
+  $(this).toggleClass('selected');
   if($('.comment-container').is(':visible'))
     hideCommentBox();
-  else showCommentBox();
+  else{
+    fillComment($(this).data('id'));
+    showCommentBox();
+  }
 }
 
 function showCommentBox(){
@@ -20,6 +23,7 @@ function showCommentBox(){
 
 function hideCommentBox(){
   if(commentBoxIsAnimating()){ return; }
+  $('.comment-link').removeClass('selected');
   $('.comment-container').addClass('slideOutLeft');
   // Just in case browser doesn't support CSS animations
   setTimeout(function(){
@@ -29,7 +33,7 @@ function hideCommentBox(){
 
 function fillComment(commentID){
   var commentText = $('.comment-text').filter(function(){
-    return $(this).data('id')
+    return $(this).data('id') == commentID
   }).eq(0).html();
   $('.comment').html(commentText);
 }
