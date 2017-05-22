@@ -49,16 +49,6 @@ body {
       padding: 10px 5%; }
       body .container .main-content h1 {
         text-align: center; }
-      body .container .main-content .links {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-        padding: 0 20%; }
-        body .container .main-content .links a {
-          color: grey;
-          font-weight: bold;
-          letter-spacing: 2px;
-          text-decoration: none; }
       body .container .main-content .main-section:last-child {
         margin-bottom: 10px; }
       body .container .main-content .main-section .unit {
