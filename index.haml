@@ -7,13 +7,22 @@
     %script{src: 'jquery-3.2.1.min.js', type: 'text/javascript'}
     %script{src: 'main.js', type: 'text/javascript'}
   %body
+    .comment-text{data: { id: 0 } }
+      The Internet generally being a less formal setting than a PDF document
+      (and certainly more flexible when it comes to presentation of content),
+      I thought it might be nice to share some brief context about various items
+      I mention here.
+      %br
+      %br
+      Please feel free to click around and read them!
     .comment-text{data: { id: 1 } }
-      While the majority of the focus of my position is on PVTA projects unrelated
+      While the focus of my position is on PVTA projects largely unrelated
       to UMass Transit, we feel at Transit that it's important for staff throughout
       the organization to maintain a meaningful connection to everyday operations.
       %br
+      %br
       As a student, I committed to driving a regular fixed-route shift at least
-      once per week &mdash; and in this professional position, I still attend weekly
+      once per week &mdash; and similarly, in this professional position, I still attend weekly
       staff meetings and participate in an operations on-call rotation.
     .comment-text{data: { id: 2 } }
       More details coming soon (once I get more into the swing of the things).
@@ -45,6 +54,9 @@
             .title The source of this résumé
             .info
               %a{href: 'https://github.com/dfaulken/resume'} git@github.com:dfaulken/resume.git
+          .comment-explanation
+            This online version of my résumé features some bonus comments.
+            %span.comment-link{ data: { id: 0 } } &rdquo;
         .main-section#experience
           %h2.title Experience
           .job

@@ -8,7 +8,7 @@ body {
     border-bottom-right-radius: 12px;
     border-top-right-radius: 12px;
     display: none;
-    height: 200px;
+    height: 250px;
     left: 0;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -74,6 +74,9 @@ body {
         body .container .main-content .main-section .unit .info {
           margin-left: 1em;
           text-align: left; }
+      body .container .main-content .main-section .comment-explanation {
+        margin-top: 10px;
+        text-align: center; }
       body .container .main-content .main-section h2.title {
         border-bottom: 2px solid lightgrey;
         border-top: 2px solid lightgrey;
@@ -96,7 +99,7 @@ body {
             display: flex;
             color: grey; }
             body .container .main-content .meta div.dates .range {
-              margin-left: 2em; }
+              margin-left: 3em; }
       body .container .main-content .copyright {
         display: flex;
         justify-content: center;
